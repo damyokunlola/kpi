@@ -33,7 +33,6 @@ nav.setRoute('/', 'Login', function() {
 
 });
 
-
 nav.setRoute('/verify', 'Verify', function() {
 
     app.innerHTML = render('verify');
@@ -53,6 +52,7 @@ nav.setRoute('/verify', 'Verify', function() {
         // resp.json();
         // if (resp.status == true) {
         //     ctx.setState({auth: true, user: email.value})
+            ctx.setState({role: 'admin'});
             nav.route('/dashboard');
         // }
     }
