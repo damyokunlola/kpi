@@ -38,9 +38,7 @@ nav.setRoute('/verify', 'Verify', function() {
 
     app.innerHTML = render('verify');
 
-    $('#help')[0].onclick = (e) => route('/help');
-
-    $('#submit')[0].onclick = async function(e) {
+    $('#submit')[0].onclick = async function() {
         let token = $('#token')[0];
         if (token.value == "" || !validateToken(token.value)) {
             token.classList.add('border-danger');
