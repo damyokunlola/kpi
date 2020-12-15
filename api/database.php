@@ -1,32 +1,21 @@
 <?php
 
+$server="localhost";
+ $user="root";
+$pwd= "";
+$dbname= "KPI";
 
-class Mydatabase{
 
-private $server="localhost";
-private $user="root";
-private $pwd= "";
-private $dbname= "KPI";
-public $conn;
-    function __construct()
-    {
-        $con=new mysqli($this->server,$this->user,$this->pwd,$this->dbname );
-        if(!$con){
-            die("unable to connect :". $con->error);
-        }
-        else{
-            $this->conn= $con;
-        }
 
-       
-    }
-public function dbcon(){
-    
-  return $this->con;
-
+$con= new mysqli($server,$user,$pwd,$dbname);
+if($con->connect_error){
+    die("error occure:". $con->error);
+}
+else{
+    echo "conncetd";
 }
 
-}
+
 
 
 
