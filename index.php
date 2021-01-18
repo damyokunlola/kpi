@@ -172,6 +172,7 @@
     </template>
 
     <template id="admin-dashboard">
+        
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <a class="navbar-brand"><img src="assets/imgs/miraicon.png" width="50px" alt="Mira Technologies Logo">
@@ -199,6 +200,7 @@
                 </div>
               </nav>
         </div>
+        
     </template>
 
 </body>

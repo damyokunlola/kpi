@@ -9,7 +9,6 @@ class DBConnection
 
     public function __construct()
     {
-        $dbconn = new mysqli($this->dbhost, $this->dbuser, $this->dbpassword, $this->dbname);
-        return $dbconn;
+        return new mysqli($this->dbhost, $this->dbuser, $this->dbpassword, $this->dbname);
     }
 }
